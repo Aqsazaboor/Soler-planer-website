@@ -1,0 +1,44 @@
+@mixin span-text {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8a8888;
+  line-height: 24px;
+}
+h1 {
+  // background-color: aqua;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87.52%;
+  /* identical to box height, or 56px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 141.02%;
+  /* or 34px */
+
+  text-align: center;
+  opacity: 0.9;
+}
+h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 155.02%;
+  /* or 26px */
+
+  text-align: center;
+
+  color: #363636;
+}

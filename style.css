@@ -1,0 +1,284 @@
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87.52%;
+  /* identical to box height, or 56px */
+  text-align: center;
+  color: #ffffff;
+}
+
+p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 141.02%;
+  /* or 34px */
+  text-align: center;
+  opacity: 0.9;
+}
+
+h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 155.02%;
+  /* or 26px */
+  text-align: center;
+  color: #363636;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 165px 0px 165px;
+}
+
+.header {
+  background: white;
+  cursor: pointer;
+}
+.header .header-top {
+  border-bottom: 1px solid #f3eded;
+  padding: 0px 20px;
+}
+.header .right-section {
+  display: flex;
+  justify-content: space-between;
+}
+.header .right-section .call, .header .right-section .email {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8a8888;
+  line-height: 24px;
+  gap: 10px;
+  align-items: center;
+}
+.header .right-section .call img, .header .right-section .email img {
+  width: 15px;
+}
+.header .right-section .email {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8a8888;
+  line-height: 24px;
+}
+.header .right-section .contact button {
+  width: 128px;
+  height: 41px;
+  background: #86be3f;
+  border-radius: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 78.52%;
+  /* identical to box height, or 13px */
+  border: none;
+  color: #ffffff;
+}
+.header .navbar-nav {
+  justify-content: space-between;
+  width: 100%;
+}
+.header .navbar-nav .nav-item a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 95.46%;
+  /* or 17px */
+  color: #8a8888;
+}
+.header .navbar-nav .nav-item a:hover {
+  color: green;
+}
+
+.hero-wrappe {
+  background-image: url(/image/backgroundimage.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.hero-wrappe .hero-section {
+  height: 698px;
+  width: 100%;
+  flex-direction: column;
+}
+.hero-wrappe .hero-section p {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 0px 81px;
+}
+
+.main-section {
+  padding-top: 80px;
+  position: relative;
+}
+.main-section .dot img {
+  position: absolute;
+  width: 82px;
+  left: 32px;
+  right: 0;
+  top: 90px;
+}
+.main-section .heading {
+  position: relative;
+}
+.main-section .heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  right: 0;
+  width: 119.42px;
+  height: 0px;
+  border: 4px solid #86be3f;
+}
+.main-section .paragraph p {
+  margin-top: 26px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 155.02%;
+  /* or 26px */
+  text-align: center;
+  color: #363636;
+}
+.main-section .card-list {
+  width: 100%;
+}
+.main-section .card-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 90px;
+  left: 0;
+  right: 0;
+}
+.main-section .card-section .card {
+  border: none;
+  background: #f8f8f8;
+  border-radius: 6px;
+  max-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 277px;
+  height: 100%;
+}
+.main-section .card-section .card h5 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+  text-align: center;
+  color: #363636;
+}
+.main-section .card-section .card p {
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 139% */
+  color: #666666;
+  text-align: center;
+}
+.main-section .card-section .first-card {
+  padding: 91px 5px 130px 0px;
+}
+.main-section .card-section .second-card {
+  padding-top: 91px;
+  margin-bottom: 182px;
+}
+.main-section img {
+  position: absolute;
+  top: -74px;
+  z-index: 1;
+  right: 0;
+  left: 100px;
+}
+
+.qutes {
+  margin-top: 50px;
+  padding: 0px 166px;
+  position: relative;
+}
+.qutes .qutes-mark {
+  width: 100%;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 30px;
+  /* or 143% */
+  text-align: center;
+  color: #363636;
+}
+.qutes span svg {
+  position: absolute;
+  left: 8%;
+}
+.qutes .end-mark {
+  position: absolute;
+  right: 8%;
+  top: 0;
+}
+
+.crstion {
+  margin-top: 30pxgit;
+  width: 100%;
+}
+.crstion svg {
+  width: 100%;
+}
+
+.smart-integration {
+  position: relative;
+  margin-top: 80px;
+}
+.smart-integration .dots {
+  position: absolute;
+  z-index: -1;
+}
+.smart-integration .setlight-image {
+  position: absolute;
+  z-index: 2;
+  filter: drop-shadow(0px 0px 17px rgba(38, 57, 92, 0.13));
+  border-radius: 5px;
+  top: 4%;
+  right: 0;
+  left: 8%;
+}
+.smart-integration .soler-image {
+  position: absolute;
+  z-index: 2;
+  top: 65%;
+  left: 44%;
+  right: 0;
+}
+.smart-integration .crcle {
+  box-sizing: border-box;
+  width: 413.9px;
+  height: 413.9px;
+  position: relative;
+  top: 29px;
+}
+.smart-integration .bottom-dots {
+  position: absolute;
+  left: 108%;
+  top: 109%;
+}/*# sourceMappingURL=style.css.map */
