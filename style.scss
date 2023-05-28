@@ -82,7 +82,6 @@ body {
   background-size: cover; /* Resize the background image to cover the entire container */
   .hero-section {
     height: 698px;
-    // max-width: 1440px;
     width: 100%;
     flex-direction: column;
 
@@ -126,13 +125,9 @@ body {
   .paragraph {
     p {
       margin-top: 26px;
-      font-family: "Poppins";
-      font-style: normal;
       font-weight: 400;
       font-size: 17px;
       line-height: 155.02%;
-      /* or 26px */
-
       text-align: center;
 
       color: #363636;
@@ -198,18 +193,12 @@ body {
   padding: 0px 166px;
   position: relative;
   .qutes-mark {
-    // padding: 0px 150px 0px 150px;
-    // max-width: 790px;
     width: 100%;
-
     font-style: italic;
     font-weight: 500;
     font-size: 21px;
     line-height: 30px;
-    /* or 143% */
-
     text-align: center;
-
     color: #363636;
   }
   span {
@@ -226,7 +215,7 @@ body {
   }
 }
 .crstion {
-  margin-top: 30pxgit;
+  margin-top: 30px;
   width: 100%;
   svg {
     width: 100%;
@@ -235,8 +224,10 @@ body {
 .smart-integration {
   position: relative;
   margin-top: 80px;
+  height: 560px;
+  margin-bottom: 80px;
+
   .dots {
-    // padding-left: 80px;
     position: absolute;
     z-index: -1;
   }
@@ -252,8 +243,8 @@ body {
   .soler-image {
     position: absolute;
     z-index: 2;
-    top: 65%;
-    left: 44%;
+    top: 66%;
+    left: 39%;
     right: 0;
   }
   .crcle {
@@ -262,10 +253,192 @@ body {
     height: 413.9px;
     position: relative;
     top: 29px;
+    left: 10%;
   }
   .bottom-dots {
     position: absolute;
     left: 108%;
     top: 109%;
+  }
+  .second-part {
+    position: relative;
+
+    height: 100%;
+    img {
+      position: absolute;
+      z-index: 1;
+      left: 97%;
+      right: 0;
+      top: 12%;
+    }
+    .circledots {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      top: 28%;
+      left: 100%;
+    }
+  }
+  .sire {
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 84.02%;
+      text-align: center;
+      color: #86be3f;
+    }
+    h3 {
+      margin-top: 13px;
+      width: 638px;
+      height: 39px;
+      &:after {
+        position: absolute;
+        top: 124%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 119.42px;
+        background-color: #86be3f;
+        height: 5px;
+      }
+    }
+  }
+  .sire-paragraph {
+    position: absolute;
+    top: 68%;
+    left: 12%;
+
+    p {
+      width: 549px;
+      margin-top: 26px;
+      color: #666666;
+      font-size: 17px;
+      // display: flex;
+      // text-align: start;
+    }
+  }
+}
+//Connesso, Intelligente, Resistente -->
+.connesso {
+  h2 {
+    text-align: center;
+    &:after {
+      position: absolute;
+      top: 150%;
+      right: 0;
+      left: 45%;
+      bottom: 0;
+      content: "";
+      width: 119.42px;
+      background-color: #86be3f;
+      height: 5px;
+    }
+  }
+  .boxes {
+    margin-top: 77px;
+    margin-bottom: 87px;
+    .box {
+      margin-top: 39px;
+      display: flex;
+      gap: 13px;
+      .vector {
+        img {
+          border: 3px solid #86be3f;
+          border-radius: 50%;
+          padding: 15px 17px;
+        }
+      }
+      h4 {
+        margin: 0;
+      }
+      p {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 128.52%;
+        color: #363636;
+        max-width: 424px;
+        width: 100%;
+      }
+    }
+    .box-2 {
+      p {
+        max-width: 462px;
+        width: 100%;
+      }
+    }
+    .box-3 {
+      p {
+        max-width: 457px;
+        width: 100%;
+      }
+    }
+    .box-4 {
+      p {
+        max-width: 452px;
+        width: 100%;
+      }
+    }
+  }
+}
+.perche-card {
+  margin-top: 52px;
+  margin-bottom: 50px;
+  width: 349.06px;
+  height: 372.51px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  h6 {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .card-body {
+    .card-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #363636;
+    }
+  }
+}
+.mini-card {
+  margin-top: 30px;
+  margin-bottom: 29px;
+  max-width: 255px;
+  width: 100%;
+  max-height: 147.9px;
+  height: 100%;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  h6 {
+    text-align: center;
+  }
+  img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .card-body {
+    .card-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #363636;
+    }
   }
 }
