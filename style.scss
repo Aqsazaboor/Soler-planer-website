@@ -1,4 +1,8 @@
 @import "_config";
+@import "_footer";
+@import "_header";
+
+@import "_herosection";
 
 body {
   font-family: "Poppins", sans-serif;
@@ -9,96 +13,27 @@ body {
   width: 100%;
   padding: 0px 165px 0px 165px;
 }
-// header section
-.header {
-  background: white;
-  cursor: pointer;
-  .header-top {
-    border-bottom: 1px solid #f3eded;
-    padding: 0px 20px;
-  }
-  .right-section {
-    display: flex;
-    justify-content: space-between;
-    .call {
-      @include span-text;
-      gap: 10px;
-      align-items: center;
-
-      img {
-        width: 15px;
-      }
-    }
-    .email {
-      @extend .call;
-      @include span-text;
-    }
-    .contact {
-      button {
-        width: 128px;
-        height: 41px;
-        background: #86be3f;
-        border-radius: 6px;
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 78.52%;
-        /* identical to box height, or 13px */
-        border: none;
-        color: #ffffff;
-      }
-    }
-  }
-  .navbar-nav {
-    justify-content: space-between;
-    width: 100%;
-    .nav-item {
-      a {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 95.46%;
-        /* or 17px */
-
-        color: #8a8888;
-
-        &:hover {
-          color: green;
-          // cursor: pointer;
-        }
-      }
-    }
-  }
-}
-
-// hero section
-
-.hero-wrappe {
-  background-image: url(/image/backgroundimage.png);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  .hero-section {
-    height: 698px;
-    width: 100%;
-    flex-direction: column;
-
-    p {
-      color: #ffffff;
-      width: 100%;
-      text-align: center;
-      padding: 0px 81px;
-    }
-  }
-}
 
 // mainsection
 
 .main-section {
   padding-top: 80px;
   position: relative;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    &:after {
+      position: absolute;
+      top: 150%;
+      right: 0;
+      left: 45%;
+      bottom: 0;
+      content: "";
+      width: 119.42px;
+      background-color: #86be3f;
+      height: 3px;
+    }
+  }
   .dot {
     img {
       position: absolute;
@@ -108,23 +43,10 @@ body {
       top: 90px;
     }
   }
-  .heading {
-    position: relative;
-  }
 
-  .heading::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 45%;
-    right: 0;
-    width: 119.42px;
-    height: 0px;
-    border: 4px solid #86be3f;
-  }
   .paragraph {
     p {
-      margin-top: 26px;
+      margin-top: 54px;
       font-weight: 400;
       font-size: 17px;
       line-height: 155.02%;
@@ -150,8 +72,8 @@ body {
       max-width: 350px;
       width: 100%;
       box-sizing: border-box;
-      max-height: 277px;
-      height: 100%;
+      // max-height: 277px;
+      // height: 100%;
       h5 {
         margin: 0;
         font-weight: 500;
@@ -331,12 +253,12 @@ body {
       position: absolute;
       top: 150%;
       right: 0;
-      left: 45%;
+      left: 43%;
       bottom: 0;
       content: "";
       width: 119.42px;
       background-color: #86be3f;
-      height: 5px;
+      height: 3px;
     }
   }
   .boxes {
@@ -385,6 +307,23 @@ body {
     }
   }
 }
+
+.Perche {
+  h2 {
+    text-align: center;
+    &:after {
+      position: absolute;
+      top: 150%;
+      right: 0;
+      left: 44%;
+      bottom: 0;
+      content: "";
+      width: 119.42px;
+      background-color: #86be3f;
+      height: 3px;
+    }
+  }
+}
 .perche-card {
   margin-top: 52px;
   margin-bottom: 50px;
@@ -393,6 +332,7 @@ body {
   background: #ffffff;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+
   h6 {
     text-align: center;
   }
@@ -412,6 +352,8 @@ body {
     }
   }
 }
+
+// mini card section
 .mini-card {
   margin-top: 30px;
   margin-bottom: 29px;
@@ -439,6 +381,388 @@ body {
       line-height: 26px;
       text-align: center;
       color: #363636;
+    }
+  }
+}
+
+// scegli section
+.scegli {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  h2 {
+    text-align: center;
+    &:after {
+      position: absolute;
+      top: 150%;
+      right: 0;
+      left: 45%;
+      bottom: 0;
+      content: "";
+      width: 119.42px;
+      background-color: #86be3f;
+      height: 3px;
+    }
+  }
+}
+
+.siir {
+  width: 540px;
+
+  height: 952px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  h6 {
+    margin: 24px 0px 0px 26px;
+    color: #86be3f;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    padding-left: 26px;
+    padding-right: 26px;
+    li {
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 67.52%;
+        color: #666666;
+      }
+    }
+  }
+
+  span {
+    padding-left: 26px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 84.02%;
+    color: #363636;
+  }
+  .device {
+    display: flex;
+    padding-left: 26px;
+    gap: 53px;
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .scopri {
+    width: 545px;
+    ul {
+      li {
+        display: flex;
+        gap: 10px;
+
+        p {
+          margin: 0;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 109.02%;
+          /* or 17px */
+
+          color: #666666;
+        }
+      }
+    }
+
+    h4 {
+      padding-left: 16px;
+      font-size: 16px;
+    }
+  }
+}
+.scopri-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 21px;
+}
+
+.sole {
+  h2 {
+    text-align: center;
+    &:after {
+      position: absolute;
+      top: 150%;
+      right: 0;
+      left: 45%;
+      bottom: 0;
+      content: "";
+      width: 119.42px;
+      background-color: #86be3f;
+      height: 3px;
+    }
+  }
+}
+
+.connet {
+  background-image: url(image/linebackground.png);
+}
+
+.anche-card {
+  background-image: url(image/green.png);
+  background-repeat: no-repeat;
+
+  width: 112%;
+  height: 270px;
+  padding: 13px;
+
+  .anche-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 96%;
+
+    width: 88%;
+    padding: 13px;
+    background: white;
+    /* Drop Shadow */
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 126.52%;
+      /* or 18px */
+
+      text-align: center;
+
+      color: #666666;
+    }
+    h3 {
+      margin: 0px;
+      width: 179px;
+      text-align: center;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 84.02%;
+      /* or 13px */
+
+      /* #363636 */
+
+      color: #363636;
+    }
+  }
+}
+.anche-card2 {
+  background-image: url(image/gray.png);
+
+  @extend .anche-card;
+}
+.anche-card3 {
+  background-image: url(image/graybox.png);
+  @extend .anche-card;
+}
+.anche-card4 {
+  background-image: url(image/yellow.png);
+  @extend .anche-card;
+}
+
+.collegati {
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px 21px;
+  border-radius: 6px;
+  button {
+    background-color: #86be3f;
+    color: #ffffff;
+  }
+}
+.sole {
+  .accordin-heading {
+    margin-top: 80px;
+    // margin-bottom: 80px;
+  }
+}
+
+.accordion {
+  display: flex;
+
+  flex-direction: column;
+  // gap: 20px;
+  .card {
+    background: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    border: none;
+    .card-header {
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 0;
+
+      border-bottom: none;
+      background-color: #fefefe;
+      border-radius: 6px 6px 0px 0px;
+    }
+  }
+
+  .card-section {
+    margin-top: 80px;
+
+    .mines {
+      display: flex;
+      gap: 27px;
+      align-items: center;
+    }
+  }
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.card {
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.left-side {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 92%;
+    right: 0;
+    bottom: 0;
+  }
+}
+.right-side {
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.map-side {
+  margin-top: 80px;
+}
+.left-form {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 9px;
+  padding: 28px 24px 33px 28px;
+  .map {
+    display: flex;
+    gap: 17px;
+    align-items: flex-start;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 133.52%;
+      /* or 21px */
+
+      color: #666666;
+    }
+  }
+  .call {
+    border-top: 1px solid #dedede;
+    p {
+      margin-top: 18px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 133.52%;
+      /* or 21px */
+
+      /* #363636 */
+
+      color: #363636;
+    }
+  }
+}
+.right-form {
+  box-sizing: border-box;
+  margin-top: 80px;
+
+  max-width: 730px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 9px;
+  form {
+    margin-top: 30px;
+    input {
+      border: 1px solid #dedede;
+      border-radius: 5px;
+    }
+    button {
+      display: flex;
+      padding: 10px 50px;
+      justify-content: center;
+      width: 141px;
+      height: 45px;
+      color: white;
+      background: #86be3f;
+      border-radius: 6px;
+    }
+  }
+}
+
+// green section
+
+.green {
+  margin-top: 80px;
+  background-image: url(image/greenbackground.png);
+
+  height: 133.59px;
+  h6 {
+    color: #ffffff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.52%;
+    /* or 18px */
+
+    /* #FFFFFF */
+
+    color: #ffffff;
+  }
+
+  .searchbox {
+    display: flex;
+    position: relative;
+    margin-top: 45px;
+    width: 100%;
+    justify-content: center;
+
+    input {
+      width: 427px;
+      background: #ffffff;
+      border-radius: 25px;
+    }
+    img {
+      width: 39px;
+      height: 32px;
+      background: #86be3f;
+      border-radius: 50%;
+      padding: 7px;
+      left: 78%;
+      right: 0;
+      top: 3px;
+      position: absolute;
     }
   }
 }

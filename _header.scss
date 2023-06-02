@@ -1,0 +1,63 @@
+// header section
+.header {
+  background: white;
+  cursor: pointer;
+  .header-top {
+    border-bottom: 1px solid #f3eded;
+    padding: 0px 20px;
+  }
+  .right-section {
+    display: flex;
+    justify-content: space-between;
+    .call {
+      @include span-text;
+      gap: 10px;
+      align-items: center;
+
+      img {
+        width: 15px;
+      }
+    }
+    .email {
+      @extend .call;
+      @include span-text;
+    }
+    .contact {
+      button {
+        width: 128px;
+        height: 41px;
+        background: #86be3f;
+        border-radius: 6px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 78.52%;
+        /* identical to box height, or 13px */
+        border: none;
+        color: #ffffff;
+      }
+    }
+  }
+  .navbar-nav {
+    justify-content: space-between;
+    width: 100%;
+    .nav-item {
+      a {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 95.46%;
+        /* or 17px */
+
+        color: #8a8888;
+
+        &:hover {
+          color: green;
+          // cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.footer {
+  // background-image: url(image/footerbackground.png);
+
+  //   border: 5px solid #e18728;
+  //   // width: 88.67px;
+  //   // height: 74.43px;
+  //   background-repeat: repeat;
+  //   opacity: 0.03;
+  background-color: black;
+
+  height: 585.39px;
+
+  .footer-first {
+    margin-top: 73px;
+    p {
+      margin-top: 26px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 146.02%;
+      /* or 23px */
+
+      /* #FFFFFF */
+
+      color: #ffffff;
+    }
+  }
+  .links {
+    margin-top: 107px;
+    h6 {
+      text-align: center;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 95.52%;
+      /* or 15px */
+
+      /* #FFFFFF */
+
+      color: #ffffff;
+    }
+    ul {
+      color: #ffffff;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 25px;
+      padding-left: 83px;
+    }
+    a {
+      color: #ffffff;
+
+      opacity: 0.8;
+      padding-left: 79px;
+      text-align: center;
+    }
+  }
+  .footer-last {
+    margin-top: 106px;
+    margin-bottom: 30px;
+    h5 {
+      text-align: start;
+      color: #ffffff;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 95.52%;
+      /* or 15px */
+
+      /* #FFFFFF */
+
+      color: #ffffff;
+    }
+    .map {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133.52%;
+        /* or 21px */
+
+        /* #FFFFFF */
+
+        color: #ffffff;
+
+        opacity: 0.8;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 28px;
+    border-top: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 91.5%;
+      /* or 13px */
+
+      /* #FFFFFF */
+
+      color: #ffffff;
+      padding: 20px 0px;
+    }
+  }
+  .social {
+    display: flex;
+    gap: 18px;
+    padding: 20px 0px;
+  }
+}
